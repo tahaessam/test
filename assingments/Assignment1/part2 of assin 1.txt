@@ -1,0 +1,20 @@
+
+1) Difference between forEach and for...of
+forEach: Runs a callback on each item in an array. Cannot use break or continue. Doesn’t work well with sequential async/await.
+for...of: Loops over any iterable. Can use break and continue. Works properly with async/await.
+2) Hoisting and the Temporal Dead Zone (TDZ)
+Hoisting: JS moves variable and function declarations to the top of their scope during compilation.
+var: Hoisted and initialized with undefined.
+let/const: Hoisted but not initialized → TDZ (accessing them before declaration throws an error).
+3) Difference between == and ===
+==: Compares values with type coercion. Types may be converted before comparison.
+===: Compares both value and type. No coercion.
+4) How try-catch works & why it’s important in async operations
+try block runs code that might throw an error.
+catch block handles the error, preventing the program from crashing.
+Important for async operations to catch rejected promises or runtime errors.
+5) Type conversion vs coercion
+Conversion: Explicit and deliberate change of type (predictable).
+Coercion: JS automatically converts types (may lead to unexpected results).
+
+
